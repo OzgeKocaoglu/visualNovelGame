@@ -13,9 +13,38 @@ define Ozge = Character("Özge")
 # The game starts here.
 
 label start:
-
-    "Beş arkadaş LOL oynamaktadrır."
+    scene bg 01
+    with fade
+    "Beş arkadaş League of Legens oynamaktadır."
     "Sıradan bir dereceli maçıdır."
-    "Can" "Kayn geliyo! Geliyo! Ormanıma giriyo!"
-    "Ergun" "Teemo alan ittir"
+
+label sprites:
+    show can
+    with dissolve
+    Can "Abi Kayn sıkıntı abi ya."
+    show ergun at right
+    with dissolve
+    Ergun "Teemo almış it oğlu it"
+    show melih at left
+    Melih "Yeşim sakin oyna, ben yardıma gelicem"
+    hide can
+    hide melih
+    hide ergun
+    show yesim at right
+    Yesim "Tamam"
+    "Oyun sakin bir şekilde başlar. Can kırmızıdan başlayarak üst ormana girer."
+    Can "Kayn geliyo! Geliyo! Ormanıma giriyo!"
+    Can "Yeşim Yeşim! Blue'ya gel."
+    Yesim "Blue ne taraftı?"
+    Can "ÖLDÜM YA!"
+    "İlk kan döküldü"
+    "Bir rakip katledildi."
+    Ergun "Teemo alan bu itleri böyle cezalandırmak lazım."
+    "Bu sırada bot lane'de dengeler değişmektedir."
+    Ozge "Birazdan giriyoruz."
+    Ozge "Bu kim ya? Almış Jhin bu kim? Gel buraya. Kim bu kim-"
+    "Takım arkadaşlarından birisi katledildi."
+
+label background:
+
     return
